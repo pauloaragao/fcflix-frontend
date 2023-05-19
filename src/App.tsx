@@ -5,9 +5,9 @@ import {Header} from "./components/Header"
 import {Layout} from "./components/Layout"
 import { appTheme } from './config/theme';
 import {Routes, Route, Link} from "react-router-dom"
-import { CategoryList } from './features/category/ListCategory';
-import { CreateCategory } from './features/category/CreateCategory';
-import { CategoryEdit } from './features/category/EditCategory';
+import { CategoryList } from './features/categories/ListCategory';
+import { CreateCategory } from './features/categories/CreateCategory';
+import { CategoryEdit } from './features/categories/EditCategory';
 
 function App() {
 return (
@@ -21,7 +21,6 @@ return (
     >
       <Header />
       <Layout>
-        <h1> Welcome to React Router! </h1>
         <Routes>
           <Route path="/" element={<CategoryList />} />
           <Route path="/categories" element={<CategoryList />} />
